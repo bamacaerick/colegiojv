@@ -1,0 +1,26 @@
+/*
+Theme Name: Jules Verne
+Author: Suwebmaster.net | bamacaerick
+Description: A fully responsive website with custom design provided by the Design Team, SEO-friendly, Schema-ready, Accessibility-ready, based on Bootstrap 5.1 Grid and utilities.
+Tags: accessibility-ready, one-column, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, translation-ready, blog.
+Version: 1.0.0-16.4.2024
+Requires PHP: > 7.4
+*/
+
+// @import 'node_modules/bootstrap/scss/functions';
+// @import '../../node_modules/bootstrap/scss/variables';
+// @import 'node_modules/bootstrap/scss/maps';
+// @import '../../node_modules/bootstrap/scss/bootstrap';
+// @import 'config'; // Override bootstrap variables values
+// @import 'node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+// @import 'node_modules/bootstrap/scss/utilities';
+// @import 'node_modules/bootstrap/scss/utilities/api';
+// @import 'node_modules/bootstrap/scss/containers';
+@import 'config';
+@import 'mixins';
+@import 'utilities';
+@import 'wpeditor';
+// @import 'resets';
+@import 'parts/index';
+// @import 'templates/index';

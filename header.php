@@ -73,46 +73,80 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-        <header id="header" role="banner">
-            <div class="container">
-                <div id="branding">
-                    <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                        <?php
-                            if (is_front_page() || is_home() || is_front_page() && is_home()) {
-                                echo '<h1>';
-                            }
-                            if (has_custom_logo()) {
-                                $custom_logo_id = get_theme_mod('custom_logo');
-                                $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
-                                $nologo = '';
-                            } elseif (has_site_icon()) {
-                                $logo = get_site_icon_url();
-                                $nologo = '';
-                            } else {
-                                $logo = '';
-                                $nologo = 'no-logo';
-                            }
-                            echo '<a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home" itemprop="url"><span class="screen-reader-text" itemprop="name">' . esc_html(get_bloginfo('name')) . '</span><span id="logo-container" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img src="';
-                            if (has_custom_logo()) {
-                                echo esc_url($logo[0]);
-                            } else {
-                                echo esc_url($logo);
-                            }
-                            echo '" alt="' . esc_attr(get_bloginfo('name')) . '" id="logo" class="' . esc_attr($nologo) . '" itemprop="url" /></span></a>';
-                            if (is_front_page() || is_home() || is_front_page() && is_home()) {
-                                echo '</h1>';
-                            }
-                            ?>
+    <div class="container">
+        <header id="header" role="banner" class="header">
+                <div class="row d-none d-md-flex header-preheader bg-black-light align-items-center">
+                    <div class="col-6 text-start">
+                        accessibility
                     </div>
-                    <div id="site-description" <?php if (!is_single()) {
-        echo ' itemprop="description"';
-    } ?>><?php bloginfo('description'); ?></div>
+                    <div class="col-6 text-end">
+                        <div class="row align-self-end">
+                            <div class="social col">
+                                <a href="#" class="social-icon social-icon-fb"><span class="sr-only">Facebook</span></a>
+                                <a href="#" class="social-icon social-icon-x"><span class="sr-only">X</span></a>
+                                <a href="#" class="social-icon social-icon-pin"><span
+                                        class="sr-only">Pinterest</span></a>
+                                <a href="#" class="social-icon social-icon-ing"><span
+                                        class="sr-only">Instagram</span></a>
+                            </div>
+                            <div class="header-search col">
+                                <?php get_search_form(); ?>
+                            </div>
+                            <div class="language-selector col-auto">
+                                <a href="/fr">FR</a>
+                                <a href="/">ES</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                    <button type="button" class="menu-toggle"><span class="menu-icon">&#9776;</span><span
-                            class="menu-text screen-reader-text"><?php esc_html_e(' Menu', 'generic'); ?></span></button>
-                    <?php wp_nav_menu(array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' )); ?>
-                    <div id="search"><?php get_search_form(); ?></div>
-                </nav>
-            </div>
+                <div class="row header-branding header-branding-bg align-items-center">
+                    <div class="col-6 p-0">
+                        <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                            <?php
+                                if (is_front_page() || is_home() || is_front_page() && is_home()) {
+                                    echo '<h1>';
+                                }
+                                if (has_custom_logo()) {
+                                    $custom_logo_id = get_theme_mod('custom_logo');
+                                    $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
+                                    $nologo = '';
+                                } elseif (has_site_icon()) {
+                                    $logo = get_site_icon_url();
+                                    $nologo = '';
+                                } else {
+                                    $logo = '';
+                                    $nologo = 'no-logo';
+                                }
+                                echo '<a href="' . esc_url(home_url('/')) . '" title="' . esc_attr(get_bloginfo('name')) . '" rel="home" itemprop="url"><span class="screen-reader-text" itemprop="name">' . esc_html(get_bloginfo('name')) . '</span><span id="logo-container" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><img src="';
+                                if (has_custom_logo()) {
+                                    echo esc_url($logo[0]);
+                                } else {
+                                    echo esc_url($logo);
+                                }
+                                echo '" alt="' . esc_attr(get_bloginfo('name')) . '" id="logo" class="' . esc_attr($nologo) . '" itemprop="url" /></span></a>';
+                                if (is_front_page() || is_home() || is_front_page() && is_home()) {
+                                    echo '</h1>';
+                                }
+                                ?>
+                        </div>
+                        <div id="site-description" class="sr-only" <?php if (!is_single()) {echo ' itemprop="description"';} ?>>
+                            <?php bloginfo('description'); ?>
+                        </div>
+                    </div>
+                    <div class="col-6 text-end p-0">
+                        <div class="header-branding-secondary d-inline-block">
+                            <span class="sr-only">Éttablissement conventionné  |</span> 
+                            <span class="sr-only">aefe - Agence pour l'enseignement français à l'étranger</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                            <!-- <button type="button" class="menu-toggle"><span class="menu-icon">&#9776;</span><span class="menu-text screen-reader-text"><?php esc_html_e(' Menu', 'generic'); ?></span></button> -->
+                            <?php wp_nav_menu(array( 'theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>' )); ?>
+                            <div id="search"></div>
+                        </nav>
+                    </div>
+                </div>
         </header>

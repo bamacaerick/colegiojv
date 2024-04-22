@@ -1,0 +1,15 @@
+.bg {
+    &-black {
+        background-color: $black;
+
+        &-light {
+            background-color: $black-light;
+        }
+    }
+
+    &-gray {
+        &-100 {
+            background-color: $grady-100;
+        }
+    }
+}

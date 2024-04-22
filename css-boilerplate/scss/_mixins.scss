@@ -1,7 +1,10 @@
 // all in one file mixins
+@function toRem($value) {
+    $remValue: calc($value / 16) + rem; 
+    @return $remValue;
+}
 
-
- @mixin font-size($sizeValue: $font-size-general ){
+@mixin font-size($sizeValue: $font-size-general ){
     font-size: $sizeValue + px; //fallback for old browsers
     font-size: (0.0625 * $sizeValue) + rem;
   }

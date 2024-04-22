@@ -4,19 +4,39 @@
      */
     get_header(); 
 ?>
-<main id="content" role="main" class="container">
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="header">
-                <h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
-            </header>
-            <div class="entry-content" itemprop="mainContentOfPage">
-                <?php if (has_post_thumbnail()) {
-        the_post_thumbnail('full', array( 'itemprop' => 'image' ));
-    } ?>
-                <?php the_content(); ?>
+<main id="content" role="main">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <?php get_template_part('partials/actualites'); ?>
+        </div>
+        <div class="col-12 col-md-4">
+            <a href="#" class="d-block bg-gray-100 mb-4">
+                <span class="text-uppercase">Inscriptions</span>
+            </a>
+            <a href="#" class="d-block bg-gray-100 mb-4">
+                <span class="text-uppercase">ENT</span>
+            </a>
+            <a href="#" class="d-block bg-gray-100 mb-4">
+                <span class="text-uppercase">Recrutement</span>
+            </a>
+            <a href="#" class="d-block bg-gray-100 mb-4">
+                <span class="text-uppercase">CDI</span>
+            </a>
+            <div class="tweets">
+                <span>tweets</span>
             </div>
-        </article>
-    <?php endwhile; endif; ?>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <?php get_template_part('partials/evenements'); ?>
+        </div>
+        <div class="col-12 col-md-4">
+            <?php get_template_part('partials/blogs'); ?>
+        </div>
+        <div class="col-12 col-md-4">
+            <?php get_template_part('partials/webradio'); ?>
+        </div>
+    </div>
 </main>
 <?php get_footer(); ?>

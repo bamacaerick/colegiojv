@@ -20,7 +20,7 @@ $getBlogs = new WP_Query(array(
                     <?php if($featured_img_url) :?>   
                       <img src="<?php echo $featured_img_url; ?>" alt="">
                     <?php else: ?>
-                      <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/stories/default-thumbnail.jpg" alt="" />
+                      <img  src="<?php bloginfo('stylesheet_directory'); ?>/images/image-placeholder-2.jpg" alt="" />
                     <?php endif; ?>
                 </div>
                 <div class="article-content">

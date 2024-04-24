@@ -11,7 +11,7 @@ $getBlogs = new WP_Query(array(
 <?php if ($getBlogs->have_posts()): ?>
     <div class="article article-blogs">
         <div class="article-header">
-            <h2 class="text-uppercase text-center">Actualités</h2>
+            <h2 class="text-uppercase text-center pt-sans-narrow-bold text-gray-200 h1"><span class="hexagon">Actualités</span></h2>
         </div>
         <?php while ($getBlogs->have_posts()): $getBlogs->the_post(); ?>
             <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>

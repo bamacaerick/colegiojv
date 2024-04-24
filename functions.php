@@ -19,11 +19,13 @@ function generic_setup()
 add_action('wp_enqueue_scripts', 'generic_enqueue');
 function generic_enqueue()
 {
+    wp_enqueue_style('pt-sans-narrow-font', 'https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
     wp_enqueue_style('generic-style', get_stylesheet_uri());
     wp_enqueue_script('jquery');
     wp_register_script('generic-videos', get_template_directory_uri() . '/js/videos.js');
     wp_enqueue_script('generic-videos');
-    wp_add_inline_script('generic-videos', 'jQuery(document).ready(function($){$("#wrapper").vids();});');
+    // wp_add_inline_script('generic-videos', 'jQuery(document).ready(function($){$("#wrapper").vids();});');
 }
 add_action('wp_footer', 'generic_footer');
 function generic_footer()

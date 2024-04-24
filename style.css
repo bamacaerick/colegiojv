@@ -1607,6 +1607,27 @@ html {
   white-space: nowrap;
 }
 
+.pt-sans-narrow-regular {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-narrow-bold {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.hexagon::before {
+  content: "";
+  background: transparent url("./images/hexagon-icon.svg") center no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 12px;
+  display: inline-block;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -2076,4 +2097,12 @@ img.aligncenter {
 }
 .bg-gray-100 {
   background-color: #e6e6e5;
+}
+
+.text-gray-200 {
+  color: #525251;
+}
+
+h1, .h1 {
+  font-size: 2.25rem;
 }

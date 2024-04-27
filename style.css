@@ -1619,6 +1619,11 @@ html {
   font-style: normal;
 }
 
+.hexagon {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+}
 .hexagon::before {
   content: "";
   background: transparent url("./images/hexagon-icon.svg") center no-repeat;
@@ -1626,10 +1631,28 @@ html {
   width: 13px;
   height: 12px;
   display: inline-block;
+  position: absolute;
+  bottom: 33%;
+  left: -5px;
+}
+.hexagon::after {
+  content: "";
+  background: transparent url("./images/hexagon-icon.svg") center no-repeat;
+  background-size: contain;
+  width: 13px;
+  height: 12px;
+  display: inline-block;
+  position: absolute;
+  bottom: 33%;
+  right: -5px;
 }
 
 .p-0 {
   padding: 0;
+}
+
+.p-50 {
+  padding-top: 50px;
 }
 
 .mb-4 {
@@ -1652,6 +1675,53 @@ html {
   text-transform: uppercase;
 }
 
+.border-bottom-dotted {
+  border-bottom: 1px dashed #000;
+}
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.py-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-70 {
+  margin-bottom: 70px;
+}
+
+.main-container {
+  box-shadow: -5px 0 5px -5px rgba(115, 115, 115, 0.65), 5px 0 5px -5px rgba(115, 115, 115, 0.65);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /*!
  * Bootstrap Reboot v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -1664,7 +1734,7 @@ html {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Arial", sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -1677,7 +1747,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Arial", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2098,11 +2168,278 @@ img.aligncenter {
 .bg-gray-100 {
   background-color: #e6e6e5;
 }
+.bg-fuscia {
+  background-color: #6bbdb7;
+}
+.bg-pink {
+  background-color: #ea5b87;
+}
+.bg-green-light {
+  background-color: #a8c23f;
+}
 
+.text-gray-body {
+  color: #323232;
+}
 .text-gray-200 {
   color: #525251;
+}
+.text-green {
+  color: #007e77;
+}
+.text-green-light {
+  color: #a8c23f;
+}
+.text-black {
+  color: #000000;
+}
+.text-pink {
+  color: #ea5b87;
 }
 
 h1, .h1 {
   font-size: 2.25rem;
+}
+
+h2, .h2 {
+  font-size: 1.875rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+#mega-menu-wrap-main-menu {
+  background-color: #e6e6e5;
+}
+#mega-menu-wrap-main-menu .mega-menu-link {
+  color: #323232 !important;
+}
+#mega-menu-wrap-main-menu .mega-menu-item.mega-toggle-on > .mega-menu-link,
+#mega-menu-wrap-main-menu .mega-menu-item:hover > .mega-menu-link {
+  color: #fff !important;
+}
+
+.article-blogs-header {
+  padding: 20px 20px 50px 20px;
+  margin-bottom: 10px;
+}
+.article-blogs-header-heading {
+  color: #ffffff;
+}
+.article-blogs-body {
+  padding-left: 30px;
+  background: transparent url("./images/icons/comment.png") left top no-repeat;
+  background-size: 1.25rem auto;
+}
+.article-blogs-thumbnail {
+  margin-bottom: 0.625rem;
+}
+.article-blogs-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+.article-blogs-content-date {
+  color: #000000;
+  font-weight: bold;
+}
+.article-blogs-content-heading {
+  font-size: 0.875rem;
+  color: #ea5b87;
+}
+.article-blogs-content-excerpt {
+  font-size: 0.875rem;
+  color: #323232;
+}
+.article-blogs-permalink-anchor {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.125rem;
+  line-height: 0;
+}
+.article-blogs-archive {
+  border-top: 1px dotted #bebebe;
+  margin-top: 0.625rem;
+  padding-top: 1.25rem;
+}
+.article-blogs-archive-anchor {
+  display: inline-block;
+  background-color: #ea5b87;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.article-actualites {
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  margin-bottom: 70px;
+  padding: 1.25rem;
+}
+.article-actualites-header-heading {
+  border-bottom: 1px dashed #000;
+  margin-bottom: 1.5625rem;
+  padding-bottom: 0.625rem;
+}
+.article-actualites-body {
+  margin-bottom: 1.25rem;
+}
+.article-actualites-thumbnail {
+  width: 15rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.article-actualites-thumbnail img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+.article-actualites-permalink-anchor {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  line-height: 0;
+}
+.article-actualites-archive {
+  margin-top: 1.25rem;
+}
+.article-actualites-archive-anchor {
+  display: inline-block;
+  background-color: #007e77;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.article-evenements-header {
+  padding: 20px 20px 50px 20px;
+  margin-bottom: 10px;
+}
+.article-evenements-header-heading {
+  color: #ffffff;
+}
+.article-evenements-body {
+  padding-left: 30px;
+  background: transparent url("./images/icons/calendar.png") left top no-repeat;
+  background-size: 1.25rem auto;
+}
+.article-evenements-thumbnail {
+  margin-bottom: 0.625rem;
+}
+.article-evenements-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+.article-evenements-content-date {
+  color: #000000;
+  font-weight: bold;
+}
+.article-evenements-content-heading {
+  font-size: 0.875rem;
+  color: #6bbdb7;
+}
+.article-evenements-content-excerpt {
+  font-size: 0.875rem;
+  color: #323232;
+}
+.article-evenements-permalink-anchor {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.125rem;
+  line-height: 0;
+}
+.article-evenements-archive {
+  border-top: 1px dotted #bebebe;
+  margin-top: 0.625rem;
+  padding-top: 1.25rem;
+}
+.article-evenements-archive-anchor {
+  display: inline-block;
+  background-color: #6bbdb7;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.article-webradio-header {
+  padding: 20px 20px 50px 20px;
+  margin-bottom: 10px;
+}
+.article-webradio-header-heading {
+  color: #ffffff;
+}
+.article-webradio-body {
+  padding-left: 30px;
+  background: transparent url("./images/icons/microphone.png") left top no-repeat;
+  background-size: auto 1.625rem;
+}
+.article-webradio-thumbnail {
+  margin-bottom: 0.625rem;
+}
+.article-webradio-thumbnail img {
+  max-width: 100%;
+  height: auto;
+}
+.article-webradio-content-time {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+}
+.article-webradio-content-heading {
+  font-size: 0.875rem;
+  color: #a8c23f;
+}
+.article-webradio-content-excerpt {
+  font-size: 0.875rem;
+  color: #323232;
+}
+.article-webradio-permalink-anchor {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.125rem;
+  line-height: 0;
+}
+.article-webradio-archive {
+  border-top: 1px dotted #bebebe;
+  margin-top: 0.625rem;
+  padding-top: 1.25rem;
+}
+.article-webradio-archive-anchor {
+  display: inline-block;
+  background-color: #a8c23f;
+  color: #ffffff;
+  padding: 5px 10px;
+}
+
+.sidebar-home {
+  padding-top: 3.125rem;
+  padding-left: 1.25rem;
+}
+.sidebar-home-anchor {
+  height: 6.25rem;
+  line-height: 6.25rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  color: #525251;
+  font-size: 1.125rem;
+  padding: 0.9375rem 1.5625rem;
+}
+.sidebar-home-anchor::before {
+  content: "";
+  display: inline-block;
+  border-radius: 50px;
+  background: #fff url("./images/icons/inscriptions.png") center center no-repeat;
+  background-size: 2.8125rem;
+  width: 4.375rem;
+  height: 4.375rem;
+}
+.sidebar-home-anchor-span {
+  padding-left: 0.625rem;
+}
+.sidebar-home-anchor:nth-of-type(2)::before {
+  background: #fff url("./images/icons/ent.png") center center no-repeat;
+  background-size: 2.8125rem;
+}
+.sidebar-home-anchor:nth-of-type(3)::before {
+  background: #fff url("./images/icons/hhrr.png") center center no-repeat;
+  background-size: 2.8125rem;
+}
+.sidebar-home-anchor:nth-of-type(4)::before {
+  background: #fff url("./images/icons/cdi.png") center center no-repeat;
+  background-size: 2.1875rem auto;
 }

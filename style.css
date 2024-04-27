@@ -2220,48 +2220,48 @@ h3, .h3 {
   color: #fff !important;
 }
 
-.article-blogs-header {
+.article-exposition-header {
   padding: 20px 20px 50px 20px;
   margin-bottom: 10px;
 }
-.article-blogs-header-heading {
+.article-exposition-header-heading {
   color: #ffffff;
 }
-.article-blogs-body {
+.article-exposition-body {
   padding-left: 30px;
   background: transparent url("./images/icons/comment.png") left top no-repeat;
   background-size: 1.25rem auto;
 }
-.article-blogs-thumbnail {
+.article-exposition-thumbnail {
   margin-bottom: 0.625rem;
 }
-.article-blogs-thumbnail img {
+.article-exposition-thumbnail img {
   max-width: 100%;
   height: auto;
 }
-.article-blogs-content-date {
+.article-exposition-content-date {
   color: #000000;
   font-weight: bold;
 }
-.article-blogs-content-heading {
+.article-exposition-content-heading {
   font-size: 0.875rem;
   color: #ea5b87;
 }
-.article-blogs-content-excerpt {
+.article-exposition-content-excerpt {
   font-size: 0.875rem;
   color: #323232;
 }
-.article-blogs-permalink-anchor {
+.article-exposition-permalink-anchor {
   font-family: "Times New Roman", Times, serif;
   font-size: 3.125rem;
   line-height: 0;
 }
-.article-blogs-archive {
+.article-exposition-archive {
   border-top: 1px dotted #bebebe;
   margin-top: 0.625rem;
   padding-top: 1.25rem;
 }
-.article-blogs-archive-anchor {
+.article-exposition-archive-anchor {
   display: inline-block;
   background-color: #ea5b87;
   color: #ffffff;

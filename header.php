@@ -73,7 +73,7 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <div class="container">
+    <div class="container main-container">
         <header id="header" role="banner" class="header">
                 <div class="row d-none d-md-flex header-preheader bg-black-light align-items-center">
                     <div class="col-6 text-start">

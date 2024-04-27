@@ -1,7 +1,25 @@
 .text {
     &-gray {
+        &-body {
+            color: $gray-body
+        }
         &-200 {
             color: $gray-200;
         }
+    }
+
+    &-green {
+        color: $green;
+        &-light {
+            color: $green-light;
+        }
+    }
+
+    &-black {
+        color: $black;
+    }
+
+    &-pink {
+        color: $pink;
     }
 }

@@ -12,4 +12,20 @@
             background-color: $grady-100;
         }
     }
+
+    &-fuscia {
+        background-color: $fuscia;
+    }
+
+    &-pink {
+        background-color: $pink;
+    }
+
+    &-green {
+
+        &-light {
+            background-color: $green-light;
+        }
+    }
+
 }

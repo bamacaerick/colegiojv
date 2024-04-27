@@ -1,0 +1,14 @@
+#mega-menu-wrap-main-menu {
+    background-color: $grady-100;
+
+    .mega-menu-link {
+        color: $gray-body!important;
+    }
+
+    .mega-menu-item.mega-toggle-on,
+    .mega-menu-item:hover {
+        & > .mega-menu-link {
+            color: #fff!important;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.article-blogs {
+    &-header {
+        padding: 20px 20px 50px 20px;
+        margin-bottom: 10px;
+        
+        &-heading {
+            color: $white;
+        }
+    }
+
+    &-body {
+        padding-left: 30px;
+        background: transparent url('./images/icons/comment.png') left top no-repeat;
+        background-size: toRem(20) auto;
+    }
+
+    &-thumbnail {
+        margin-bottom: toRem(10);
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &-content {
+        &-date {
+            color: $black;
+            font-weight: bold;
+        }
+
+        &-heading {
+            font-size: toRem(14);
+            color: $pink
+        }
+
+        &-excerpt {
+            font-size: toRem(14);
+            color: $gray-body;
+        }
+    }
+
+    &-permalink {
+        &-anchor {
+            font-family: "Times New Roman", Times, serif;
+            font-size: toRem(50);
+            line-height: 0;
+        }
+    }
+
+    &-archive {
+        border-top: 1px dotted $gray-300;
+        margin-top: toRem(10);
+        padding-top: toRem(20);
+        &-anchor {
+            display: inline-block;
+            background-color: $pink;
+            color: $white;
+            padding: 5px 10px
+        }
+    }
+}

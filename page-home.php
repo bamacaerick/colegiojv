@@ -9,21 +9,23 @@
         <div class="col-12 col-md-8">
             <?php get_template_part('partials/actualites'); ?>
         </div>
-        <div class="col-12 col-md-4">
-            <a href="#" class="d-block bg-gray-100 mb-4">
-                <span class="text-uppercase">Inscriptions</span>
-            </a>
-            <a href="#" class="d-block bg-gray-100 mb-4">
-                <span class="text-uppercase">ENT</span>
-            </a>
-            <a href="#" class="d-block bg-gray-100 mb-4">
-                <span class="text-uppercase">Recrutement</span>
-            </a>
-            <a href="#" class="d-block bg-gray-100 mb-4">
-                <span class="text-uppercase">CDI</span>
-            </a>
-            <div class="tweets">
-                <span>tweets</span>
+        <div class="col-12 col-md-4 pt-50">
+            <div class="sidebar-home">
+                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
+                    <span class="sidebar-home-anchor-span text-uppercase">Inscriptions</span>
+                </a>
+                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
+                    <span class="sidebar-home-anchor-span text-uppercase">ENT</span>
+                </a>
+                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
+                    <span class="sidebar-home-anchor-span text-uppercase">Recrutement</span>
+                </a>
+                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
+                    <span class="sidebar-home-anchor-span text-uppercase">CDI</span>
+                </a>
+                <div class="tweets">
+                    <span>tweets</span>
+                </div>
             </div>
         </div>
     </div>

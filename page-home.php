@@ -15,7 +15,7 @@
                     <span class="sidebar-home-anchor-span text-uppercase">Inscriptions</span>
                 </a>
                 <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
-                    <span class="sidebar-home-anchor-span text-uppercase">ENT</span>
+                    <span class="sidebar-home-anchor-span text-uppercase">ENT (Pronote/ONE/NEO)</span>
                 </a>
                 <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
                     <span class="sidebar-home-anchor-span text-uppercase">Recrutement</span>
@@ -34,7 +34,7 @@
             <?php get_template_part('partials/evenements'); ?>
         </div>
         <div class="col-12 col-md-4">
-            <?php get_template_part('partials/blogs'); ?>
+            <?php get_template_part('partials/exposition'); ?>
         </div>
         <div class="col-12 col-md-4">
             <?php get_template_part('partials/webradio'); ?>

@@ -26,6 +26,10 @@ function generic_enqueue()
     wp_register_script('generic-videos', get_template_directory_uri() . '/js/videos.js');
     wp_enqueue_script('generic-videos');
     // wp_add_inline_script('generic-videos', 'jQuery(document).ready(function($){$("#wrapper").vids();});');
+
+    wp_register_script('general', get_template_directory_uri() . '/js/general.js');
+    wp_enqueue_script('general');
+
 }
 add_action('wp_footer', 'generic_footer');
 function generic_footer()

@@ -122,14 +122,7 @@ function generic_read_more_link()
         return ' <a href="' . esc_url(get_permalink()) . '" class="more-link">' . sprintf(__('...%s', 'generic'), '<span class="screen-reader-text">  ' . esc_html(get_the_title()) . '</span>') . '</a>';
     }
 }
-add_filter('excerpt_more', 'generic_excerpt_read_more_link');
-function generic_excerpt_read_more_link($more)
-{
-    if (!is_admin()) {
-        global $post;
-        return ' <a href="' . esc_url(get_permalink($post->ID)) . '" class="more-link">' . sprintf(__('...%s', 'generic'), '<span class="screen-reader-text">  ' . esc_html(get_the_title()) . '</span>') . '</a>';
-    }
-}
+
 add_filter('big_image_size_threshold', '__return_false');
 add_filter('intermediate_image_sizes_advanced', 'generic_image_insert_override');
 function generic_image_insert_override($sizes)

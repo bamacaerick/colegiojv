@@ -11,7 +11,7 @@ $getWebradio = new WP_Query(array(
 <?php if ($getWebradio->have_posts()): ?>
     <div class="article-webradio">
         <div class="article-webradio-header bg-green-light">
-            <h2 class="article-webradio-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Webradio</h2>
+            <h2 class="article-webradio-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Webradio LE QUETZAL INFORMÉ</h2>
         </div>
         <?php while ($getWebradio->have_posts()): $getWebradio->the_post(); ?>
             <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>

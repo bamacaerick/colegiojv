@@ -17,7 +17,11 @@ $getWebradio = new WP_Query(array(
             <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
             <div class="article-webradio-body">
                 <div class="article-webradio-content">
-                    <h3 class="article-webradio-content-heading text-green-light m-0"><?php the_title(); ?></h3>
+                    <h3 class="article-webradio-content-heading text-green-light m-0">
+                        <a href="<?php the_permalink(); ?>" class="text-green-light">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
                     <span class="d-block article-webradio-content-time">Dureé: 2'28</span>
                     <p class="article-webradio-content-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 26); ?></p>
                     <div class="article-webradio-permalink text-end">

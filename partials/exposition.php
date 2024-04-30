@@ -25,7 +25,11 @@
                 </div>
                 <div class="article-exposition-content">
                     <span class="article-exposition-content-date d-block"><?php echo get_the_date(); ?></span>
-                    <h3 class="article-exposition-content-heading text-uppercase"><?php the_title(); ?></h3>
+                    <h3 class="article-exposition-content-heading text-uppercase">
+                        <a href="<?php the_permalink(); ?>" class="text-pink">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
                     <p class="article-exposition-content-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 34); ?></p>
                     <div class="article-exposition-permalink text-end">
                         <a href="<?php the_permalink(); ?>" class="article-exposition-permalink-anchor text-pink"><span class="sr-only">Read more</span>...</a>

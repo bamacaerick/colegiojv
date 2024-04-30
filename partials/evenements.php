@@ -25,7 +25,11 @@ $getEvenements = new WP_Query(array(
                 </div>
                 <div class="article-evenements-content">
                     <span class="d-block article-evenements-content-date"><?php echo get_the_date(); ?></span>
-                    <h3 class="article-evenements-content-heading text-uppercase"><?php the_title(); ?></h3>
+                    <h3 class="article-evenements-content-heading text-uppercase">
+                        <a href="<?php the_permalink(); ?>" class="text-fuscia"> 
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
                     <p class="article-evenements-content-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 34); ?></p>
                     <div class="article-evenements-permalink text-end">
                         <a href="<?php the_permalink(); ?>" class="article-evenements-permalink-anchor text-green"><span class="sr-only">Read more</span>...</a>

@@ -1,0 +1,14 @@
+.entry {
+    &-actualites {
+        margin-top: 30px;
+
+        &-date {
+            padding: 10px 0;
+            margin-bottom: 10px;
+            display: block;
+            border-top: 1px dotted $black;
+            border-bottom: 1px dotted $black;
+            font-weight: bold;
+        }
+    }
+}

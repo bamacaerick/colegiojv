@@ -15,7 +15,7 @@
                     <span class="sidebar-home-anchor-span text-uppercase">Inscriptions</span>
                 </a>
                 <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
-                    <span class="sidebar-home-anchor-span text-uppercase">ENT (Pronote/ONE/NEO)</span>
+                    <span class="sidebar-home-anchor-span text-uppercase">Pronote/ONE/NEO</span>
                 </a>
                 <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
                     <span class="sidebar-home-anchor-span text-uppercase">Recrutement</span>
@@ -24,7 +24,7 @@
                     <span class="sidebar-home-anchor-span text-uppercase">CDI</span>
                 </a>
                 <div class="tweets">
-                    <span>tweets</span>
+                    <span>FB feed</span>
                 </div>
             </div>
         </div>

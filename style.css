@@ -2190,6 +2190,9 @@ img.aligncenter {
 .text-green-light {
   color: #a8c23f;
 }
+.text-fuscia {
+  color: #6bbdb7;
+}
 .text-black {
   color: #000000;
 }
@@ -2442,4 +2445,16 @@ h3, .h3 {
 .sidebar-home-anchor:nth-of-type(4)::before {
   background: #fff url("./images/icons/cdi.png") center center no-repeat;
   background-size: 2.1875rem auto;
+}
+
+.entry-actualites {
+  margin-top: 30px;
+}
+.entry-actualites-date {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  display: block;
+  border-top: 1px dotted #000000;
+  border-bottom: 1px dotted #000000;
+  font-weight: bold;
 }

@@ -10,23 +10,7 @@
             <?php get_template_part('partials/actualites'); ?>
         </div>
         <div class="col-12 col-md-4 pt-50">
-            <div class="sidebar-home">
-                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
-                    <span class="sidebar-home-anchor-span text-uppercase">Inscriptions</span>
-                </a>
-                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
-                    <span class="sidebar-home-anchor-span text-uppercase">Pronote/ONE/NEO</span>
-                </a>
-                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
-                    <span class="sidebar-home-anchor-span text-uppercase">Recrutement</span>
-                </a>
-                <a href="#" class="sidebar-home-anchor pt-sans-narrow-bold bg-gray-100">
-                    <span class="sidebar-home-anchor-span text-uppercase">CDI</span>
-                </a>
-                <div class="tweets">
-                    <span>FB feed</span>
-                </div>
-            </div>
+            <?php get_sidebar('links'); ?>
         </div>
     </div>
     <div class="row">

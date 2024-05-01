@@ -2177,6 +2177,9 @@ img.aligncenter {
 .bg-green-light {
   background-color: #a8c23f;
 }
+.bg-white {
+  background-color: #ffffff;
+}
 
 .text-gray-body {
   color: #323232;
@@ -2408,11 +2411,11 @@ h3, .h3 {
   padding: 5px 10px;
 }
 
-.sidebar-home {
+.sidebar-links {
   padding-top: 3.125rem;
   padding-left: 1.25rem;
 }
-.sidebar-home-anchor {
+.sidebar-links-anchor {
   height: 6.25rem;
   line-height: 6.25rem;
   display: flex;
@@ -2422,7 +2425,7 @@ h3, .h3 {
   font-size: 1.125rem;
   padding: 0.9375rem 1.5625rem;
 }
-.sidebar-home-anchor::before {
+.sidebar-links-anchor::before {
   content: "";
   display: inline-block;
   border-radius: 50px;
@@ -2431,18 +2434,18 @@ h3, .h3 {
   width: 4.375rem;
   height: 4.375rem;
 }
-.sidebar-home-anchor-span {
+.sidebar-links-anchor-span {
   padding-left: 0.625rem;
 }
-.sidebar-home-anchor:nth-of-type(2)::before {
+.sidebar-links-anchor:nth-of-type(2)::before {
   background: #fff url("./images/icons/ent.png") center center no-repeat;
   background-size: 2.8125rem;
 }
-.sidebar-home-anchor:nth-of-type(3)::before {
+.sidebar-links-anchor:nth-of-type(3)::before {
   background: #fff url("./images/icons/hhrr.png") center center no-repeat;
   background-size: 2.8125rem;
 }
-.sidebar-home-anchor:nth-of-type(4)::before {
+.sidebar-links-anchor:nth-of-type(4)::before {
   background: #fff url("./images/icons/cdi.png") center center no-repeat;
   background-size: 2.1875rem auto;
 }

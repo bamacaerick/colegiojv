@@ -140,6 +140,9 @@
                         </div>
                     </div>
                 </div>
+                <?php if( is_page_template('page-home.php')) {
+                    get_template_part('partials/slider');
+                }?>
                 <div class="row">
                     <div class="col-12 p-0">
                         <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">

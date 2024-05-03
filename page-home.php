@@ -6,11 +6,11 @@
 ?>
 <main id="content" role="main">
     <div class="row">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-lg-8">
             <?php get_template_part('partials/actualites'); ?>
         </div>
-        <div class="col-12 col-md-4 pt-50">
-            <?php get_sidebar('links'); ?>
+        <div class="col-12 col-lg-4 pt-50">
+            <?php get_sidebar('boxes'); ?>
         </div>
     </div>
     <div class="row">

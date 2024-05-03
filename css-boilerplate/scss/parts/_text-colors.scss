@@ -1,5 +1,7 @@
 .text {
     &-gray {
+        color: $gray;
+        
         &-body {
             color: $gray-body
         }

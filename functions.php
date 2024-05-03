@@ -14,7 +14,12 @@ function generic_setup()
     if (!isset($content_width)) {
         $content_width = 1920;
     }
-    register_nav_menus(array( 'main-menu' => esc_html__('Main Menu', 'generic') ));
+    register_nav_menus(
+        array( 
+            'main-menu' => esc_html__('Main Menu', 'generic'),
+            'sidebar-boxes' => esc_html__('Sidebar Boxes', 'generic')
+        )
+    );
 }
 add_action('wp_enqueue_scripts', 'generic_enqueue');
 function generic_enqueue()
@@ -23,10 +28,15 @@ function generic_enqueue()
 
     wp_enqueue_style('generic-style', get_stylesheet_uri());
     wp_enqueue_script('jquery');
-    wp_register_script('generic-videos', get_template_directory_uri() . '/js/videos.js');
-    wp_enqueue_script('generic-videos');
+    // wp_register_script('generic-videos', get_template_directory_uri() . '/js/videos.js');
+    // wp_enqueue_script('generic-videos');
     // wp_add_inline_script('generic-videos', 'jQuery(document).ready(function($){$("#wrapper").vids();});');
 
+    // if(is_page_template('page-home.php')){
+    //     wp_enqueue_style('swiper-css', get_template_directory_uri() . '/css/swiper.min.css', false, '1.1', '');
+    //     wp_register_script('swiper-custom', get_template_directory_uri() . '/js/swiper.min.js');
+    //     wp_enqueue_script('swiper-custom');
+    // }
     wp_register_script('general', get_template_directory_uri() . '/js/general.js');
     wp_enqueue_script('general');
 
@@ -180,4 +190,44 @@ function generic_comment_count($count)
     } else {
         return $count;
     }
+}
+
+/* ----------- // CUSTOM PANELS // ----------- */
+/* ----------- // ====== ====== // ----------- */
+
+add_action('init', 'themePostTypes');
+
+function themePostTypes() {
+
+  /*=== Slider ===*/
+	$SliderLabels = array(
+    'name' => _x('Slider', 'post type general name'),
+    'singular_name' => _x('Slider', 'post type singular name'),
+    'add_new' => _x('Añadir Nuevo', 'Slider'),
+    'add_new_item' => __('Añadir Nuevo Slider'),
+    'edit_item' => __('Editar Slider'),
+    'new_item' => __('Añadir Slider'),
+    'view_item' => __('Ver Slider'),
+    'search_items' => __('Buscar Slider'),
+    'not_found' =>  __('Slider no existente.'),
+    'not_found_in_trash' => __('No se encontraron Sliders en la papelera.'), 
+    'parent_item_colon' => '',
+    'menu_name' => 'Slider'
+  );
+
+  register_post_type(
+    'slider', 
+    array('labels' => $SliderLabels,
+    'description' => 'Slider',
+    'publicly_queryable' => true,
+    'public' => true, 
+    'show_ui' => true,
+    'hierarchical' => true, // like posts
+    'supports' => array(
+        'title',
+        'editor',
+        'thumbnail',
+        'page-attributes')
+    )
+  );
 }

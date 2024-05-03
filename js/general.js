@@ -22,8 +22,28 @@ const observer = new IntersectionObserver(handleIntersection, {
 
 $(document).ready(function () { 
     // Select the target element
-    const target = document.getElementById("stats");
+    // const target = document.getElementById("stats");
 
-    // Start observing the target element
-    observer.observe(target);
+    // // Start observing the target element
+    // observer.observe(target);
+
+    var isHomeSlider = $('.slider-home');
+
+    if (isHomeSlider !== undefined && isHomeSlider.length > 0) { 
+    }
+    var homeSwiper = new Swiper(".homeSwiper", {
+      autoplay: {
+        delay: 4000,
+      },
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 });

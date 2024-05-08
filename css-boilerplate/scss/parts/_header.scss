@@ -20,17 +20,25 @@
     &-search {
 
         &-input {
+            background: transparent url('./images/icons/lens.svg') 97% center no-repeat;
+            background-size: 12px;
+            padding-right: 20px;
             height: toRem(20);
             border: toRem(1) solid $gray;
         }
 
         &-button {
-            width: 0;
-            height: 0;
             overflow: hidden;
-            border: 0;
-            display: block;
-            background: none;
+            display: inline-block;
+            background-color: $gray;
+            color: $white;
+            font-size: toRem(12);
+            border: toRem(1) solid $gray;
+            height: toRem(20 );
+            margin-left: -5px;
+            top: -1px;
+            cursor: pointer;
+            position: relative;
         }
     }
 

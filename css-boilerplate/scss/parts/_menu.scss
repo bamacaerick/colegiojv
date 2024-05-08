@@ -10,6 +10,16 @@
       &:nth-child(2) {
         border-color: $blue-100;
 
+        &.mega-toggle-on {
+          > a.mega-menu-link {
+            background: $blue-100 !important;
+          }
+        }
+
+        > a.mega-menu-link:hover {
+          background: $blue-100 !important;
+        }
+
         & > ul.mega-sub-menu {
           background: $blue-100 !important;
         }
@@ -17,6 +27,16 @@
 
       &:nth-child(3) {
         border-color: $pink;
+
+        &.mega-toggle-on {
+          > a.mega-menu-link {
+            background: $pink !important;
+          }
+        }
+
+        > a.mega-menu-link:hover {
+          background: $pink !important;
+        }
 
         & > ul.mega-sub-menu {
           background: $pink !important;
@@ -26,6 +46,16 @@
       &:nth-child(4) {
         border-color: $fuscia;
 
+        &.mega-toggle-on {
+          > a.mega-menu-link {
+            background: $fuscia !important;
+          }
+        }
+
+        > a.mega-menu-link:hover {
+          background: $fuscia !important;
+        }
+
         & > ul.mega-sub-menu {
           background: $fuscia !important;
         }
@@ -34,6 +64,16 @@
       &:nth-child(5) {
         border-color: $purple;
 
+        &.mega-toggle-on {
+          > a.mega-menu-link {
+            background: $purple !important;
+          }
+        }
+
+        > a.mega-menu-link:hover {
+          background: $purple !important;
+        }
+
         & > ul.mega-sub-menu {
           background: $purple !important;
         }
@@ -41,6 +81,16 @@
 
       &:last-child {
         border-color: $yellow;
+
+        &.mega-toggle-on {
+          > a.mega-menu-link {
+            background: $yellow !important;
+          }
+        }
+
+        > a.mega-menu-link:hover {
+          background: $yellow !important;
+        }
 
         & > ul.mega-sub-menu {
           background: $yellow !important;

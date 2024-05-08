@@ -5,9 +5,8 @@
                 <div class="col-12 col-lg-4">
                     <div class="footer-location">
                         <address>
-                            <span class="footer-location-heading pt-sans-narrow-bold">Lycée français d’Auckland</span><br>
-                            <span class="footer-location-address">35 Campbell Road, Auckland SW7 2DG</span> 
-                            <span>+44(0)20 7584 6322</span> 
+                            <span class="footer-location-heading pt-sans-narrow-bold">UBICACIÓN</span><br>
+                            <span class="footer-location-address">1ra avenida 2-62 zona 1, Aldea Don Justo, Fraijanes (Carretera a San José Pinula km 18.5), Fraijanes 01062</span> 
                         </address>
                         <?php $mapIframe = get_field('address_map_iframe', $HOMEID); ?>
                         
@@ -18,16 +17,16 @@
                 </div>
                 <div class="col-12 col-lg-4 footer-sponsor-borders">
                     <div class="footer-sponsor">
-                        <p class="pt-sans-narrow-bold footer-sponsor-heading">Les partenaires</p>
+                        <p class="pt-sans-narrow-bold footer-sponsor-heading">LOS COLABORADORES</p>
                         <img class="img-responsive" src="<?php echo get_bloginfo('template_directory').'/images/footer-logo.png'; ?>" alt="">
                     </div>
                 </div>
                 <div class="col-12 col-lg-4">
                     <div class="footer-contact">
-                        <p class="pt-sans-narrow-bold footer-contact-heading">Contactez-nous</p>
+                        <p class="pt-sans-narrow-bold footer-contact-heading">CONTÁCTENOS</p>
                     </div>
                     <div class="footer-social">
-                        <p class="pt-sans-narrow-bold footer-contact-heading">Suivez-nous</p>
+                        <p class="pt-sans-narrow-bold footer-contact-heading">SÍGANOS</p>
                         <?php 
                             $homeId = $HOMEID;
                             $fb_link = get_field('facebook_page_link', $homeId);
@@ -48,28 +47,15 @@
                             <a href="<?php echo $ig_link; ?>" class="social-icon-footer social-icon-footer-ig"><span class="sr-only">Instagram</span></a>
                         <?php endif; ?>
                     </div>
+                    <div class="footer-email">
+                        <p class="pt-sans-narrow-bold footer-contact-heading">E-MAIL</p>
+                        <a href="mailto:adg@jv.edu.gt" class="footer-email-address">adg@jv.edu.gt</a>
+                    </div>
                 </div>
             </div>
             <div class="row footer-outro">
                 <div class="col-12 text-center footer-outro-wrapper">
-                    <?php 
-                        $sitemap_link = get_field('sitemap_link', $homeId);
-                        $faqs_link = get_field('faqs_link', $homeId);
-                        $terms_link = get_field('terms_link', $homeId);
-                    ?>
-                    <?php if ($sitemap_link): ?>
-                        <a href="<?php echo $sitemap_link; ?>" class="footer-outro-links pt-sans-narrow-bold">PLAN DU SITE</a>
-                        <span>&#183;</span> 
-                    <?php endif; ?>
-                    <?php if($faqs_link): ?>
-                        <a href="<?php echo $faqs_link; ?>" class="footer-outro-links pt-sans-narrow-bold">FAQ</a>
-                        <span>&#183;</span>
-                    <?php endif; ?> 
-
-                    <?php if($terms_link): ?>
-                        <a href="<?php echo $terms_link; ?>" class="footer-outro-links pt-sans-narrow-bold">MENTION LÉGALES</a>
-                    <?php endif; ?>
-                        
+                    <p class="pt-sans-narrow-bold text-center m-0">© Lycée International Français Jules Verne de Guatemala</p>    
                 </div>
             </div>
         </div>

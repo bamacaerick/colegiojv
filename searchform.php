@@ -6,6 +6,6 @@
     <div class="input-group">
         <input type="search" class="header-search-input border-0 bg-black-light text-white" aria-label="search" name="s"
             id="search-input" value="<?php echo esc_attr(get_search_query()); ?>">
-        <button type="submit" class="header-search-button"><span class="sr-only">Buscar</span></button>
+        <button type="submit" class="header-search-button">Buscar</button>
     </div>
 </form>

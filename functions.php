@@ -1,4 +1,15 @@
 <?php
+
+
+function custom_get_page_id($nicename) {
+    global $wpdb;
+    $the_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name = '$nicename' and post_type='page' AND post_status='publish'");
+    return $the_id;
+}
+
+$HOMEID = custom_get_page_id('inicio');
+
+
 add_action('after_setup_theme', 'generic_setup');
 function generic_setup()
 {

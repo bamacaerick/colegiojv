@@ -11,7 +11,7 @@
 <?php if ($getExposition->have_posts()): ?>
     <div class="article-exposition">
         <div class="article-exposition-header bg-pink">
-            <h2 class="article-exposition-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Espace exposition</h2>
+            <h2 class="article-exposition-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Espacio exposición</h2>
         </div>
         <?php while ($getExposition->have_posts()): $getExposition->the_post(); ?>
             <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
@@ -38,7 +38,7 @@
             </div>
         <?php endwhile; ?>
         <div class="article-exposition-archive text-end">
-            <a href="#" class="article-exposition-archive-anchor">> Voir tous les blogs</a>
+            <a href="#" class="article-exposition-archive-anchor">> Ver todos las expos</a>
         </div>
     </div>
 <?php endif; ?>

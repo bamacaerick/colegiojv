@@ -11,7 +11,7 @@ $getEvenements = new WP_Query(array(
 <?php if ($getEvenements->have_posts()): ?>
     <div class="article-evenements">
         <div class="article-evenements-header bg-fuscia">
-            <h2 class="article-evenements-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Événements</h2>
+            <h2 class="article-evenements-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Eventos</h2>
         </div>
         <?php while ($getEvenements->have_posts()): $getEvenements->the_post(); ?>
             <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
@@ -38,7 +38,7 @@ $getEvenements = new WP_Query(array(
             </div>
         <?php endwhile; ?>
         <div class="article-evenements-archive text-end">
-            <a href="#" class="article-evenements-archive-anchor">> Voir tous les evenements</a>
+            <a href="#" class="article-evenements-archive-anchor">> Ver todos los eventos</a>
         </div>
     </div>
 <?php endif; ?>

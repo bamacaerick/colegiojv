@@ -23,7 +23,7 @@ if($sliderPost->post_count > 0) : ?>
                   ?>
                 <div class="swiper-slide" style="background-image: url(<?php echo $featured_img_url; ?>)">
                     <div class="swiper-slide-content">
-                        <p class="pt-sans-narrow-bold h4"><?php echo get_the_title(); ?></p>
+                        <p class="pt-sans-narrow-bold h4 text-uppercase"><?php echo get_the_title(); ?></p>
                         <p class="m-0"><?php echo get_the_content(); ?></p>
                     </div>
                 </div>

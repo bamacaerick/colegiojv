@@ -1,7 +1,7 @@
 .text {
     &-gray {
         color: $gray;
-        
+
         &-body {
             color: $gray-body
         }
@@ -27,5 +27,9 @@
 
     &-pink {
         color: $pink;
+    }
+
+    &-white {
+        color: $white;
     }
 }

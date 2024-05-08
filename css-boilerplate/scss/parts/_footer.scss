@@ -1,0 +1,68 @@
+.footer {
+    margin-top: toRem(60);
+    background-color: $black-light;
+    padding-top: toRem(20);
+    color: $black-200;
+
+    &-location{
+        padding-left: toRem(30);
+        background: transparent url('./images/icons/house.png') left toRem(5) no-repeat;
+        background-size: toRem(20) auto;
+        &-heading {
+            font-size: toRem(20);
+            text-transform: uppercase;
+        }
+
+        &-address {
+            margin-top: toRem(20);
+            display: inline-block;
+        }
+    }
+
+    &-sponsor {
+        padding-left: toRem(35);
+        padding-bottom: toRem(40);
+        margin: 0 toRem(20);
+        background: transparent url('./images/icons/persons.png') left toRem(6) no-repeat;
+        background-size: toRem(25) auto;
+        
+        &-borders {
+            border-left: 1px solid $gray;
+            border-right: 1px solid $gray;
+        }
+
+        &-heading {
+            font-size: toRem(20);
+            text-transform: uppercase;
+        }
+    }
+
+    &-contact {
+        padding-left: toRem(25);
+        background: transparent url('./images/icons/person.png') left toRem(5) no-repeat;
+        background-size: toRem(15) auto;
+
+        &-heading {
+            font-size: toRem(20);
+            text-transform: uppercase;
+        }
+    }
+
+    &-social {
+        padding-left: toRem(25);
+        background: transparent url('./images/icons/feed.svg') left toRem(7) no-repeat;
+        background-size: toRem(15) auto;
+    }
+
+    &-outro {
+        padding-top: toRem(30);
+        &-wrapper {
+            padding: toRem(10) 0;
+        }
+
+        &-links {
+            color: $black-200;
+            font-size: toRem(14);
+        }
+    }
+}

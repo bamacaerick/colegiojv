@@ -1,6 +1,20 @@
 .header {
     &-preheader {
         height: toRem(30);
+        
+        &-social {
+            padding-top: toRem(3);
+        }
+
+        .language-selector {
+            &-anchor {
+                color: $gray;
+
+                &.active {
+                    color: $white;
+                }
+            }
+        }
     }
 
     &-search {

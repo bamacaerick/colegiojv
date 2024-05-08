@@ -9,7 +9,13 @@
         </header>
         <meta itemprop="description" content="<?php echo wp_strip_all_tags( get_the_excerpt(), true ); ?>" />
         <div class="entry-actualites-content wp_editor">
-            <?php the_content(); ?>
+            <?php the_field('introductory_text'); ?>
+            <?php if (has_post_thumbnail()) {
+                the_post_thumbnail('full', array( 'itemprop' => 'image' ));
+            } ?>
+            <div class="entry-actualites-content-text">
+                <?php the_content(); ?>
+            </div> 
         </div>
     </div>
 </article>

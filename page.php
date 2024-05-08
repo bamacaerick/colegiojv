@@ -5,7 +5,9 @@
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <header class="header">
-                        <h1 class="entry-title" itemprop="name"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
+                        <h1 class="entry-actualites-heading text-uppercase text-center pt-sans-narrow-bold text-green" itemprop="name">
+                            <span class="hexagon"><?php the_title(); ?></span>
+                        </h1>
                     </header>
                     <div class="entry-content" itemprop="mainContentOfPage">
                         <?php if (has_post_thumbnail()) {
@@ -17,7 +19,8 @@
             <?php endwhile; endif; ?>
         </div>
         <div class="col-12 col-lg-4">
-            Sidebar content
+            <?php get_sidebar('special'); ?>
+            <?php get_sidebar('boxes'); ?>
         </div>
     </div>
 </main>

@@ -10,5 +10,11 @@
             border-bottom: 1px dotted $black;
             font-weight: bold;
         }
+
+        &-content {
+            &-text {
+                margin-top: toRem(20);
+            }
+        }
     }
 }

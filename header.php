@@ -73,28 +73,41 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
+    <?php global $HOMEID;?>
     <div class="container main-container">
         <header id="header" role="banner" class="header">
                 <div class="row d-none d-md-flex header-preheader bg-black-light align-items-center">
                     <div class="col-6 text-start">
-                        accessibility
                     </div>
                     <div class="col-6 text-end">
-                        <div class="row align-self-end">
-                            <div class="social col">
-                                <a href="#" class="social-icon social-icon-fb"><span class="sr-only">Facebook</span></a>
-                                <a href="#" class="social-icon social-icon-x"><span class="sr-only">X</span></a>
-                                <a href="#" class="social-icon social-icon-pin"><span
-                                        class="sr-only">Pinterest</span></a>
-                                <a href="#" class="social-icon social-icon-ing"><span
-                                        class="sr-only">Instagram</span></a>
+                        <div class="row justify-content-end">
+                            <div class="header-preheader-social social col-auto">
+                                <?php 
+                                    $homeId = $HOMEID;
+                                    $fb_link = get_field('facebook_page_link', $homeId);
+                                    $tw_link = get_field('x_twitter_profile_link', $homeId);
+                                    $pin_link = get_field('pinterest_profile_link', $homeId);
+                                    $ig_link = get_field('instagram_profile_link', $homeId);
+                                ?>
+                                <?php if ($fb_link): ?>
+                                    <a href="<?php echo $fb_link; ?>" class="social-icon social-icon-fb"><span class="sr-only">Facebook</span></a>
+                                <?php endif; ?>
+                                <?php if ($tw_link): ?>
+                                    <a href="<?php echo $tw_link; ?>" class="social-icon social-icon-x"><span class="sr-only">X</span></a>
+                                <?php endif; ?>
+                                <?php if ($pin_link): ?>
+                                    <a href="<?php echo $pin_link; ?>" class="social-icon social-icon-pin"><span class="sr-only">Pinterest</span></a>
+                                <?php endif; ?>
+                                <?php if ($ig_link): ?>
+                                    <a href="<?php echo $ig_link; ?>" class="social-icon social-icon-ig"><span class="sr-only">Instagram</span></a>
+                                <?php endif; ?>
                             </div>
-                            <div class="header-search col">
+                            <div class="header-search col-auto">
                                 <?php get_search_form(); ?>
                             </div>
                             <div class="language-selector col-auto">
-                                <a href="/fr">FR</a>
-                                <a href="/">ES</a>
+                                <a href="/fr" class="language-selector-anchor">FR</a>
+                                <a href="/" class="active language-selector-anchor">ES</a>
                             </div>
                         </div>
                     </div>

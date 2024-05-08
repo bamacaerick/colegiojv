@@ -2,7 +2,7 @@
 // query recent blog post
 $getActualites = new WP_Query(array(
     'category_name' => 'actualites',
-    'posts_per_page' => 2,
+    'posts_per_page' => 3,
     'orderby' => 'date',
     'order' => 'DESC'
 ));
@@ -11,7 +11,7 @@ $getActualites = new WP_Query(array(
 <?php if ($getActualites->have_posts()): ?>
     <div class="article-actualites">
         <div class="article-actualites-header">
-            <h2 class="article-actualites-header-heading text-uppercase text-center pt-sans-narrow-bold text-gray-200 h1"><span class="hexagon">Actualités</span></h2>
+            <h2 class="article-actualites-header-heading text-uppercase text-center pt-sans-narrow-bold text-gray-200 h1"><span class="hexagon">Actualidad</span></h2>
         </div>
         <?php while ($getActualites->have_posts()): $getActualites->the_post(); ?>
             <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
@@ -40,7 +40,7 @@ $getActualites = new WP_Query(array(
             </div>
         <?php endwhile; ?>
         <div class="article-actualites-archive text-end">
-            <a href="#" class="article-actualites-archive-anchor">> Lire toutes les actualités</a>
+            <a href="#" class="article-actualites-archive-anchor">> Leer toda la actualidad</a>
         </div>
     </div>
 <?php endif; ?>

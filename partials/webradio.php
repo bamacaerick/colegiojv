@@ -31,7 +31,7 @@ $getWebradio = new WP_Query(array(
             </div>
         <?php endwhile; ?>
         <div class="article-webradio-archive text-end">
-            <a href="#" class="article-webradio-archive-anchor">Voir tous les articles</a>
+            <a href="#" class="article-webradio-archive-anchor">> Ver todos los artículos</a>
         </div>
     </div>
 <?php endif; ?>

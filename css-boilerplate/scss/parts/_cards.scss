@@ -1,0 +1,44 @@
+.card {
+    &-wrapper {
+        margin: toRem(80) 0;
+    }
+
+    &-intro {
+        margin-bottom: toRem(40);
+    }
+
+    &-header {
+        padding-top: 90px;
+        background-size: 70px auto;
+
+        &-one {
+            background: transparent url('./images/icons/card-certificate.svg') top center no-repeat;
+        }
+
+        &-two {
+            background: transparent url('./images/icons/card-earth.svg') top center no-repeat;
+        }
+
+        &-three {
+            background: transparent url('./images/icons/card-diploma.svg') top center no-repeat;
+        }
+
+        &-four {
+            background: transparent url('./images/icons/card-student.svg') top center no-repeat;
+        }
+
+        &-five {
+            background: transparent url('./images/icons/card-pc.svg') top center no-repeat;
+        }
+
+        &-six {
+            background: transparent url('./images/icons/card-eiffel-tower.svg') top center no-repeat;
+        }
+    }
+
+    &-box {
+        @media screen and (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+    }
+}

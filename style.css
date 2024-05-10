@@ -2889,3 +2889,37 @@ h4, .h4 {
 .stats-margin {
   margin-top: 10px;
 }
+
+.card-wrapper {
+  margin: 5rem 0;
+}
+.card-intro {
+  margin-bottom: 2.5rem;
+}
+.card-header {
+  padding-top: 90px;
+  background-size: 70px auto;
+}
+.card-header-one {
+  background: transparent url("./images/icons/card-certificate.svg") top center no-repeat;
+}
+.card-header-two {
+  background: transparent url("./images/icons/card-earth.svg") top center no-repeat;
+}
+.card-header-three {
+  background: transparent url("./images/icons/card-diploma.svg") top center no-repeat;
+}
+.card-header-four {
+  background: transparent url("./images/icons/card-student.svg") top center no-repeat;
+}
+.card-header-five {
+  background: transparent url("./images/icons/card-pc.svg") top center no-repeat;
+}
+.card-header-six {
+  background: transparent url("./images/icons/card-eiffel-tower.svg") top center no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .card-box {
+    margin-bottom: 20px;
+  }
+}

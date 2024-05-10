@@ -37,7 +37,10 @@
         background-position: - toRem(70) top;
     }
     &-ig {
-        background-position: right top;
+        background-position: - toRem(105) top;
 
+    }
+    &-yt {
+        background-position: right top;
     }
 }

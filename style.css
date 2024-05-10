@@ -2841,6 +2841,9 @@ h4, .h4 {
   background-position: -4.375rem top;
 }
 .social-icon-footer-ig {
+  background-position: -6.5625rem top;
+}
+.social-icon-footer-yt {
   background-position: right top;
 }
 
@@ -2853,21 +2856,36 @@ h4, .h4 {
 }
 
 .stats {
-  background: transparent url("./images/stats-bg.jpg") no-repeat center;
-  background-size: cover;
+  background-color: #042654;
   margin: 2.5rem -15px;
   padding: 3.125rem 0;
   position: relative;
   color: #ffffff;
 }
-.stats-cover {
-  background-color: rgba(4, 38, 84, 0.6);
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
+.stats-eleve-icon {
+  background: transparent url("./images/icons/alumnos.svg") center no-repeat;
+  background-size: 100% auto;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 10px auto;
+}
+.stats-abroad-icon {
+  background: transparent url("./images/icons/extranjero.svg") center no-repeat;
+  background-size: 100% auto;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 10px auto;
+}
+.stats-personal-icon {
+  background: transparent url("./images/icons/personal.svg") center no-repeat;
+  background-size: 100% auto;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 10px auto;
 }
 .stats-margin {
-  margin-top: 20px;
+  margin-top: 10px;
 }

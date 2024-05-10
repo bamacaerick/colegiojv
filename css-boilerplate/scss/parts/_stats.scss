@@ -1,21 +1,39 @@
 .stats {
-    background: transparent url('./images/stats-bg.jpg') no-repeat center;
-    background-size: cover;
+    background-color: $dark-blue;
     margin: toRem(40) -15px;
     padding: toRem(50) 0;
     position: relative;
     color: $white;
 
-    &-cover {
-        background-color: rgba($color: #042654, $alpha: .6);
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
+    &-eleve-icon {
+        background: transparent url('./images/icons/alumnos.svg') center no-repeat;
+        background-size: 100% auto;
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin: 0 auto 10px auto;
     }
 
+    &-abroad-icon {
+        background: transparent url('./images/icons/extranjero.svg') center no-repeat;
+        background-size: 100% auto;
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin: 0 auto 10px auto;
+    }
+
+    &-personal-icon {
+        background: transparent url('./images/icons/personal.svg') center no-repeat;
+        background-size: 100% auto;
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin: 0 auto 10px auto;
+    }
+
+
     &-margin {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }

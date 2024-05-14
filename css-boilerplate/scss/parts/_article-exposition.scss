@@ -1,4 +1,8 @@
 .article-exposition {
+    @media (max-width: $lg) {
+        margin-bottom: toRem(40);
+     }
+     
     &-header {
         padding: 20px 20px 50px 20px;
         margin-bottom: 10px;

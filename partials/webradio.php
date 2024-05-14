@@ -11,27 +11,20 @@ $getWebradio = new WP_Query(array(
 <?php if ($getWebradio->have_posts()): ?>
     <div class="article-webradio">
         <div class="article-webradio-header bg-green-light">
-            <h2 class="article-webradio-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Webradio LE QUETZAL INFORMÉ</h2>
+            <h2 class="article-webradio-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Media</h2>
         </div>
         <?php while ($getWebradio->have_posts()): $getWebradio->the_post(); ?>
-            <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
-            <div class="article-webradio-body">
-                <div class="article-webradio-content">
-                    <h3 class="article-webradio-content-heading text-green-light m-0">
-                        <a href="<?php the_permalink(); ?>" class="text-green-light">
-                            <?php the_title(); ?>
-                        </a>
-                    </h3>
-                    <span class="d-block article-webradio-content-time">Duración: 2'28</span>
-                    <p class="article-webradio-content-excerpt"><?php echo wp_trim_words(get_the_excerpt(), 26); ?></p>
-                    <div class="article-webradio-permalink text-end">
-                        <a href="<?php the_permalink(); ?>" class="article-webradio-permalink-anchor text-green-light"><span class="sr-only">Read more</span>...</a>
-                    </div>
-                </div>
-            </div>
+            <?php get_template_part('partials/webradio-list'); ?>
         <?php endwhile; ?>
         <div class="article-webradio-archive text-end">
-            <a href="#" class="article-webradio-archive-anchor">> Ver todos los artículos</a>
+            <?php
+                // Get the ID of a given category
+                $category_id = get_cat_ID('webradio');
+
+                // Get the URL of this category
+                $category_link = get_category_link($category_id);
+            ?>
+            <a href="<?php echo $category_link; ?>" class="article-webradio-archive-anchor">> Ver todos los artículos</a>
         </div>
     </div>
 <?php endif; ?>

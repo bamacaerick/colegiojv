@@ -43,17 +43,55 @@
     }
 
     &-branding {
-        height: toRem(160);
+        height: auto;
+
+        @media (min-width: $lg) {
+            height: toRem(160);
+        }
+        
+        &-logo {
+            img {
+                max-height:100%;
+
+                @media (min-width: $lg) {
+                    max-height: toRem(140);
+                }
+            }
+        }
+
         &-bg {
             background: transparent url('./images/header-bg.jpg') center no-repeat;
             background-size: cover;
         }
 
+        &-description {
+            line-height: 110%;
+            color: $dark-blue;
+            font-size: toRem(18);
+
+            @media (min-width: $sm) {
+                font-size: toRem(30);
+            }
+            
+            @media (min-width: $lg) {
+                font-size: toRem(36);
+            }
+        }
+
         &-secondary {
-            background: transparent url('./images/logo-secondary.png') center no-repeat;
-            background-size: auto;
-            width: toRem(253);
-            height: toRem(130);
+            width: 100%;
+            height: 80px;
+
+            @media (min-width: $sm) {
+                height: 100%;
+            }
+
+            img {
+                max-width: unset;
+                max-height: 100%;
+                height: unset;
+                width: auto;
+            }
         }
     }
 }

@@ -1,0 +1,12 @@
+.values {
+    &-section {
+        padding: 30px 0;
+
+        &-item {
+            margin-bottom: toRem(20);
+            display: block;
+        }
+    }
+
+    text-align: center;
+}

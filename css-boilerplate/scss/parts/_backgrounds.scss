@@ -32,4 +32,10 @@
         background-color: $white;;
     }
 
+    &-dark {
+        &-blue {
+            background-color: $dark-blue;
+        }
+    }
+
 }

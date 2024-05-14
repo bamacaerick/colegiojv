@@ -1,11 +1,16 @@
 .widget {
     &-area {
+        margin-bottom: 20px;
+
         &-list {
             list-style: none;
             padding: 0;
             margin: 0;
-            padding-bottom: toRem(20);
-            padding-left: toRem(20);
+            
+            @media (min-width: $lg) {
+                padding-bottom: toRem(20);
+                padding-left: toRem(20);
+            }
         }
     }
 }

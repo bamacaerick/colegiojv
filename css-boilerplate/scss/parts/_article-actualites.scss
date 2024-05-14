@@ -1,8 +1,12 @@
 .article-actualites {
     margin-top: 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    margin-bottom: 70px;
     padding: toRem(20);
+    margin-bottom: 50px;
+    
+    @media (min-width: $lg) {
+        margin-bottom: 70px;
+    }
 
     &-header {
         &-heading {
@@ -17,9 +21,14 @@
     }
 
     &-thumbnail {
-        width: toRem(240);
-        height: toRem(160);
-        overflow: hidden;
+        width: 100%;
+        height: auto;
+
+        @media (min-width: $md) {
+            width: toRem(240);
+            height: toRem(160);
+            overflow: hidden;
+        }
 
         img {
             object-fit: contain;

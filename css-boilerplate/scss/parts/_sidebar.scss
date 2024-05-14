@@ -1,7 +1,11 @@
 .sidebar {
     &-special {
-        padding-top: toRem(50);
-        padding-left: toRem(20);
+        margin-bottom: 30px;
+
+        @media (min-width: $lg) {
+            padding-top: toRem(50);
+            padding-left: toRem(20);
+        }
 
         &-calendar {
             padding: toRem(30);
@@ -48,8 +52,11 @@
     }
 
     &-boxes {
-        padding-top: toRem(50);
-        padding-left: toRem(20);
+        
+        @media (min-width: $lg) {
+            padding-top: toRem(50);
+            padding-left: toRem(20);
+        }
 
         &-list {
             margin: 0;

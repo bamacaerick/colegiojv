@@ -1,11 +1,60 @@
 #mega-menu-wrap-main-menu {
-  background-color: $grady-100;
   position: relative;
 
+  &,
+  & .mega-menu-toggle,
+  & .mega-menu-toggle + #mega-menu-main-menu {
+    background-color: $grady-100;
+  }
+
   #mega-menu-main-menu {
+    display: flex;
+
     & > li.mega-menu-item {
       border-bottom: 6px solid $black-light;
       position: unset;
+      @media (min-width: $md) {
+        flex: 1;
+        display: flex;
+        height: toRem(60);
+      }
+
+      & > a.mega-menu-link {
+        
+        @media (min-width: $md) {
+          text-align: center;
+          height: 100%;
+          line-height: 110%;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      &.mega-current-menu-item,
+      &.mega-current-menu-ancestor {
+        a.mega-menu-link {
+          background-color: transparent;
+        }
+      }
+
+      &.homepage {
+        flex: 0 0 60px;
+        background: transparent url("./images/icons/house.png") center no-repeat;
+        background-size: toRem(30) auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        a.mega-menu-link {
+          overflow: hidden;
+          color: transparent !important;
+        }
+      }
 
       &:nth-child(2) {
         border-color: $blue-100;
@@ -97,41 +146,18 @@
         }
       }
 
-      & > a.mega-menu-link {
-        padding-top: 7px;
-        padding-bottom: 7px;
-        height: 54px;
-      }
-
-      &.mega-current-menu-item {
-        a.mega-menu-link {
-          background-color: transparent;
-        }
-      }
-
-      &.homepage {
-        background: transparent url("./images/icons/house.png") center no-repeat;
-        background-size: toRem(30) auto;
-        padding-left: 15px;
-        padding-right: 15px;
-
-        a.mega-menu-link {
-          overflow: hidden;
-          color: transparent !important;
-        }
-      }
-
       & > ul.mega-sub-menu {
-        top: 60px;
+        top: 59px;
         width: 100%;
         left: 0;
         right: 0;
         padding: 30px !important;
 
         & > li.mega-menu-item {
-          display: inline-block !important;
-          width: 25% !important;
-          vertical-align: top;
+          margin: 10px 0;
+          // display: inline-block !important;
+          // width: 25% !important;
+          // vertical-align: top;
         }
 
         .mega-menu-link {
@@ -187,5 +213,14 @@
     & > .mega-menu-link {
       color: #fff !important;
     }
+  }
+
+  .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner {
+    &, 
+    &::after,
+    &::before {
+      background-color: $black-light;
+    }
+
   }
 }

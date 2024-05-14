@@ -88,8 +88,8 @@
                     </div>
                 </div>
                 <div class="row header-branding header-branding-bg align-items-center">
-                    <div class="col-3 p-0">
-                        <div id="site-title" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                    <div class="col-10 col-sm-6 col-md-4 col-lg-3 p-0">
+                        <div id="site-title" class="header-branding-logo" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
                             <?php
                                 if (is_front_page() || is_home() || is_front_page() && is_home()) {
                                     echo '<h1>';
@@ -121,19 +121,20 @@
                             <?php bloginfo('description'); ?>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <p class="h2 pt-sans-narrow-bold text-center"><?php echo get_bloginfo('name'); ?></p>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-6 d-none d-md-block">
+                        <p class="pt-sans-narrow-bold text-center header-branding-description">
+                            <?php echo get_bloginfo('name'); ?><br>
+                            <?php echo get_bloginfo('description'); ?>
+                        </p>
                     </div>
-                    <div class="col-3 text-end p-0">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-end p-0">
                         <div class="header-branding-secondary d-inline-block">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/logo-secondary.png" alt="">
                             <span class="sr-only">Éttablissement conventionné  |</span> 
                             <span class="sr-only">aefe - Agence pour l'enseignement français à l'étranger</span>
                         </div>
                     </div>
                 </div>
-                <?php if( is_page_template('page-home.php')) {
-                    get_template_part('partials/slider');
-                }?>
                 <div class="row">
                     <div class="col-12 p-0">
                         <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -143,4 +144,7 @@
                         </nav>
                     </div>
                 </div>
+                <?php if( is_page_template('page-home.php')) {
+                    get_template_part('partials/slider');
+                }?>
         </header>

@@ -15,6 +15,7 @@
                 </ul>
             </div>
         <?php endif; ?>
+        <?php get_sidebar('post'); ?>
     </div>
 </main>
 <?php get_footer(); ?>

@@ -65,6 +65,14 @@
   margin-bottom: toRem(16);
 }
 
+.mt-5 {
+  margin-top: toRem(25);
+}
+
+.mb-5 {
+  margin-bottom: toRem(25);;
+}
+
 .text-center {
   text-align: center;
 }
@@ -127,4 +135,35 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+@font-face {
+    font-family: 'Stilu';
+    src: url('./fonts/Stilu-Regular.woff2') format('woff2'),
+        url('./fonts/Stilu-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.stilu-font {
+    font-family: 'Stilu';
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Stilu-Bold';
+    src: url('./fonts/Stilu-Bold.woff2') format('woff2'),
+        url('./fonts/Stilu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+.stilu-font-bold {
+    font-family: 'Stilu-Bold';
+    font-weight: bold;
+    font-style: normal;
 }

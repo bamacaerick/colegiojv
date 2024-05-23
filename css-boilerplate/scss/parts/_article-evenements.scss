@@ -1,4 +1,5 @@
-.article-evenements {
+.article-evenements,
+.article-blue {
 
      @media (max-width: $lg) {
         margin-bottom: toRem(40);
@@ -15,7 +16,7 @@
 
     &-body {
         padding-left: 30px;
-        background: transparent url('./images/icons/calendar.png') left top no-repeat;
+        background: transparent url('./images/icons/calendar-red.png') left top no-repeat;
         background-size: toRem(20) auto;
     }
 
@@ -58,7 +59,7 @@
         padding-top: toRem(20);
         &-anchor {
             display: inline-block;
-            background-color: $fuscia;
+            background-color: $dark-blue;
             color: $white;
             padding: 5px 10px
         }

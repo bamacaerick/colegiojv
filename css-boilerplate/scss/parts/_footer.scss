@@ -48,13 +48,6 @@
         }
     }
 
-    &-social {
-        padding-left: toRem(25);
-        margin-bottom: toRem(25);
-        background: transparent url('./images/icons/feed.svg') left toRem(7) no-repeat;
-        background-size: toRem(15) auto;
-    }
-
     &-email {
         padding-left: toRem(25);
         background: transparent url('./images/icons/email.png') left toRem(7) no-repeat;

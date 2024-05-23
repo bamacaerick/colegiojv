@@ -5,7 +5,7 @@ global $HOMEID;
 $calendar_link = get_field('calendar_link', $HOMEID);
 
 ?>
-<div class="sidebar-special">
+<div class="sidebar-special mb-5">
     <div class="sidebar-special-calendar text-center">
         <h4 class="sidebar-special-calendar-heading text-uppercase text-gray">Calendario</h4>
         <p class="sidebar-special-calendar-body text-gray">Consulte su calendario escolar de eventos del liceo 

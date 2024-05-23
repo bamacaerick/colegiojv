@@ -10,7 +10,7 @@ $getEvenements = new WP_Query(array(
 
 <?php if ($getEvenements->have_posts()): ?>
     <div class="article-evenements">
-        <div class="article-evenements-header bg-fuscia">
+        <div class="article-evenements-header bg-dark-blue">
             <h2 class="article-evenements-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Eventos</h2>
         </div>
         <?php while ($getEvenements->have_posts()): $getEvenements->the_post(); ?>

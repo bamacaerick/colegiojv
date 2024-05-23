@@ -43,6 +43,8 @@
     <meta name="twitter:widgets:border-color" content="#fff" />
     <link rel="canonical"
         href="https://<?php echo $_SERVER["HTTP_HOST"]; ?><?php echo parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); ?>" />
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/Stilu-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/Stilu-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <script type="application/ld+json">
     {
         "@context": "https://www.schema.org/",
@@ -122,7 +124,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-sm-6 col-md-4 col-lg-6 d-none d-md-block">
-                        <p class="pt-sans-narrow-bold text-center header-branding-description">
+                        <p class="stilu-font-bold text-center header-branding-description">
                             <?php echo get_bloginfo('name'); ?><br>
                             <?php echo get_bloginfo('description'); ?>
                         </p>

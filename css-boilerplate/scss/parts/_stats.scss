@@ -1,6 +1,6 @@
 .stats {
     background-color: $dark-blue;
-    margin: toRem(40) -15px;
+    margin: 0 -15px;
     padding: toRem(50) 0;
     position: relative;
     color: $white;
@@ -25,6 +25,15 @@
 
     &-personal-icon {
         background: transparent url('./images/icons/personal.svg') center no-repeat;
+        background-size: 100% auto;
+        display: block;
+        width: 45px;
+        height: 45px;
+        margin: 0 auto 10px auto;
+    }
+
+    &-language-icon {
+        background: transparent url('./images/icons/languages.svg') center no-repeat;
         background-size: 100% auto;
         display: block;
         width: 45px;

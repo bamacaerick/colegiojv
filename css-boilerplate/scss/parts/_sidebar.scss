@@ -1,6 +1,8 @@
 .sidebar {
     &-special {
-        margin-bottom: 30px;
+        @media (max-width: $lg) {
+            margin-bottom: 30px;
+        }
 
         @media (min-width: $lg) {
             padding-top: toRem(50);
@@ -54,7 +56,6 @@
     &-boxes {
         
         @media (min-width: $lg) {
-            padding-top: toRem(50);
             padding-left: toRem(20);
         }
 
@@ -88,7 +89,7 @@
                 }
             }
 
-            &:nth-of-type(1) a {
+            &.inscription a {
                 &::before {
                     background: #fff url('./images/icons/inscriptions.png') center center no-repeat;
                     background-size: toRem(45) auto;
@@ -100,7 +101,7 @@
                 }
             }
 
-            &:nth-of-type(2) a {
+            &.computer a {
                 &::before {
                     background: #fff url('./images/icons/ent.png') center center no-repeat;
                     background-size: toRem(45) auto;
@@ -112,7 +113,19 @@
                 }
             }
 
-            &:nth-of-type(3) a {
+            &.pronote a {
+                &::before {
+                    background: #fff url('./images/icons/pronote.png') center center no-repeat;
+                    background-size: toRem(45) auto;
+                    content: '';
+                    display: inline-block;
+                    border-radius: 50px;
+                    width: toRem(70);
+                    height: toRem(70);
+                }
+            }
+
+            &.hhrr a {
                 &::before {
                     background: #fff url('./images/icons/hhrr.png') center center no-repeat;
                     background-size: toRem(45) auto;
@@ -124,7 +137,7 @@
                 }
             }
 
-            &:nth-of-type(4) a {
+            &.cdi a {
                 &::before {
                     background: #fff url('./images/icons/cdi.png') center center no-repeat;
                     background-size: toRem(35) auto;
@@ -140,6 +153,56 @@
         &-span {
             padding-left: toRem(10);
             line-height: 100%;
+            text-transform: uppercase;
+        }
+    }
+
+    &-actualites {
+        &-heading {
+            background-color: $gray-100;
+            color: $gray-400;
+
+            &-tag {
+                background: transparent url('./images/icons/sidebar-heading-icon.png') left center no-repeat;
+                padding-left: 45px;
+                font-size: toRem(16);
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        &-content-heading {
+            margin-bottom: 5px;
+        }
+
+        &-permalink {
+            &-anchor {
+                font-family: "Times New Roman", Times, serif;
+                line-height: 0;
+                font-size: toRem(50);
+            }
+        }
+    }
+
+    &-social {
+        background: transparent url('./images/icons/feed.svg') left toRem(7) no-repeat;
+        background-size: toRem(15) auto;
+        padding-left: toRem(20);
+        margin-left: toRem(20);
+        
+        &-wrapper {
+            background-color: $gray-body;
+            padding: toRem(20) 0;
+            margin-bottom: toRem(20);
+            
+            @media (min-width: $lg) {
+                margin-left: toRem(20);
+            }
+        }
+
+        &-heading {
+            color: $gray;
+            font-size: 1.25rem;
             text-transform: uppercase;
         }
     }

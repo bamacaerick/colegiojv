@@ -33,7 +33,7 @@ if(is_category('evenements')) {
         <?php endwhile; endif; ?>
         <?php wp_pagenavi(); ?>
     </div>
-    <div class="col-12 col-lg-4">
+    <div class="col-12 col-lg-4 mt-5">
         <?php get_sidebar('boxes'); ?>
         <?php if (is_active_sidebar('primary-widget-area')) : ?>
         <div id="primary" class="widget-area">

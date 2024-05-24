@@ -2997,6 +2997,11 @@ h6, .h6 {
   color: #ffffff;
   text-decoration: underline;
 }
+.footer-phone {
+  padding-left: 1.5625rem;
+  background: transparent url("./images/icons/phone.svg") -3px top no-repeat;
+  background-size: 1.5625rem auto;
+}
 .footer-outro {
   padding-top: 1.875rem;
 }

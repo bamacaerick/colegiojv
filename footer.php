@@ -25,8 +25,10 @@
                     <div class="footer-contact">
                         <p class="pt-sans-narrow-bold footer-contact-heading">CONTÁCTENOS</p>
                     </div>
-                    <div class="footer-email">
-                        <a href="mailto:adg@jv.edu.gt" class="footer-email-address">adg@jv.edu.gt</a> <br>
+                    <div class="footer-email mb-4">
+                        <a href="mailto:adg@jv.edu.gt" class="footer-email-address">adg@jv.edu.gt</a>
+                    </div>
+                    <div class="footer-phone">
                         <a href="tel:50266611800" class="footer-email-address"> +502 6661-1800</a>
                     </div>
                 </div>

@@ -2,14 +2,14 @@
 // query recent evenements post
 $getEvenements = new WP_Query(array(
     'category_name' => 'evenements',
-    'posts_per_page' => 1,
+    'posts_per_page' => 2,
     'orderby' => 'date',
     'order' => 'DESC'
 ));
 ?>
 
 <?php if ($getEvenements->have_posts()): ?>
-    <div class="article-evenements">
+    <div class="article-evenements mb-5">
         <div class="article-evenements-header bg-dark-blue">
             <h2 class="article-evenements-header-heading pt-sans-narrow-bold text-uppercase h3 m-0">Eventos</h2>
         </div>

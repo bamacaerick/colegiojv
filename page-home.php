@@ -10,7 +10,7 @@
         <div class="col-12 col-lg-8">
             <div class="row mt-5">
                 <div class="col-12 col-lg-6">
-                    <?php get_template_part('partials/widget-actualites'); ?>
+                    <?php get_template_part('partials/actualites'); ?>
                 </div>
                 <div class="col-12 col-lg-6">
                     <?php get_template_part('partials/evenements'); ?>

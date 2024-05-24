@@ -1,5 +1,5 @@
 <?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
-<div class="article-evenements-body">
+<div class="article-evenements-body mb-5">
     <div class="article-evenements-thumbnail">
         <?php if($featured_img_url) :?>   
             <img src="<?php echo $featured_img_url; ?>" alt="">

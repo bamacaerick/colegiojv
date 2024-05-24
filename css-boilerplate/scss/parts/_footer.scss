@@ -59,6 +59,12 @@
         }
     }
 
+    &-phone {
+        padding-left: toRem(25);
+        background: transparent url('./images/icons/phone.svg') -3px top no-repeat;
+        background-size: toRem(25) auto;
+    }
+
     &-outro {
         padding-top: toRem(30);
         &-wrapper {

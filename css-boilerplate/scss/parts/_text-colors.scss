@@ -36,4 +36,12 @@
     &-red {
         color: $red;
     }
+
+    &-blue {
+        color: $blue;
+
+        &-dark {
+            color: $dark-blue;
+        }
+    }
 }

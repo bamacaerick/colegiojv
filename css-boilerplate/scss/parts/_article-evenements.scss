@@ -14,12 +14,6 @@
         }
     }
 
-    &-body {
-        padding-left: 30px;
-        background: transparent url('./images/icons/calendar-red.png') left top no-repeat;
-        background-size: toRem(20) auto;
-    }
-
     &-thumbnail {
         margin-bottom: toRem(10);
         img {

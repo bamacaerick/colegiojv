@@ -1,49 +1,61 @@
 var $ = jQuery;
 
-function handleIntersection(entries, observer) {
+const callback = function (entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      // Call your desired function here
-      console.log("Target element is in view!");
-      // For example, you could add a class to the target element
-      entry.target.classList.add("in-view");
-      // Stop observing once the element is in view (if desired)
+      updateCount(entry.target);
       observer.unobserve(entry.target);
     }
   });
-}
+};
 
-// Create a new IntersectionObserver
-const observer = new IntersectionObserver(handleIntersection, {
-  root: null, // Use the viewport as the root
-  rootMargin: "0px", // No margin
-  threshold: 0.5, // 50% of the target element visible
+const observer = new IntersectionObserver(callback, {
+  threshold: 0.1,
 });
 
-$(document).ready(function () { 
-    // Select the target element
-    // const target = document.getElementById("stats");
+const updateCount = (el) => {
+  var $element = $(el);
+  const target = +$element.data("number");
+  var count = +$element.text();
 
-    // // Start observing the target element
-    // observer.observe(target);
+  // Lower inc to slow and higher to slow
+  const inc = target / 100;
 
-    var isHomeSlider = $('.slider-home');
+  if (count < target) {
+    // Add inc to count and output in counter
+    $element.text(Math.ceil(count + inc));
+    // Call function every ms
+    setTimeout(function () {
+      updateCount($element);
+    }, 40);
+  } else {
+    $element.text(target);
+  }
+};
 
-    if (isHomeSlider !== undefined && isHomeSlider.length > 0) { 
-    }
-    var homeSwiper = new Swiper(".homeSwiper", {
-      autoplay: {
-        delay: 4000,
-      },
-      loop: true,
-      loopFillGroupWithBlank: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+$(document).ready(function () {
+  
+  $(".counter").each(function () {
+    observer.observe(this);
+  });
+
+  var isHomeSlider = $(".slider-home");
+
+  if (isHomeSlider !== undefined && isHomeSlider.length > 0) {
+  }
+  var homeSwiper = new Swiper(".homeSwiper", {
+    autoplay: {
+      delay: 4000,
+    },
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });

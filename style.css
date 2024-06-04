@@ -2302,6 +2302,12 @@ img.aligncenter {
 .text-red {
   color: #ED2939;
 }
+.text-blue {
+  color: #405188;
+}
+.text-blue-dark {
+  color: #042654;
+}
 
 h1, .h1 {
   font-size: 2.25rem;
@@ -2613,12 +2619,6 @@ h6, .h6 {
 .article-evenements-header-heading,
 .article-blue-header-heading {
   color: #ffffff;
-}
-.article-evenements-body,
-.article-blue-body {
-  padding-left: 30px;
-  background: transparent url("./images/icons/calendar-red.png") left top no-repeat;
-  background-size: 1.25rem auto;
 }
 .article-evenements-thumbnail,
 .article-blue-thumbnail {

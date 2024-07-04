@@ -103,7 +103,7 @@
 
             &.computer a {
                 &::before {
-                    background: #fff url('./images/icons/ent.png') center center no-repeat;
+                    background: #fff url('./images/icons/ent.png?t=04072024') center center no-repeat;
                     background-size: toRem(45) auto;
                     content: '';
                     display: inline-block;
@@ -115,7 +115,7 @@
 
             &.pronote a {
                 &::before {
-                    background: #fff url('./images/icons/pronote.png') center center no-repeat;
+                    background: #fff url('./images/icons/pronote.png?t=04072024') center center no-repeat;
                     background-size: toRem(50) auto;
                     content: '';
                     display: inline-block;
@@ -127,7 +127,7 @@
 
             &.hhrr a {
                 &::before {
-                    background: #fff url('./images/icons/hhrr.png') center center no-repeat;
+                    background: #fff url('./images/icons/hhrr-05072024.png') center center no-repeat;
                     background-size: toRem(45) auto;
                     content: '';
                     display: inline-block;
@@ -139,7 +139,7 @@
 
             &.cdi a {
                 &::before {
-                    background: #fff url('./images/icons/cdi.png') center center no-repeat;
+                    background: #fff url('./images/icons/cdi-05072024.png') center center no-repeat;
                     background-size: toRem(45) auto;
                     content: '';
                     display: inline-block;

@@ -5,7 +5,7 @@ Author: suwebmaster.net | @bamacaerick
 Author URI: https://suwebmaster.net
 Description: A fully responsive website with custom design provided by the Design Team, SEO-friendly, Schema-ready, Accessibility-ready, based on Bootstrap 5.1 Grid and utilities.
 Tags: accessibility-ready, one-column, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, translation-ready, blog.
-Version: 2.0.0-04.07.2024
+Version: 2.0.1-04.07.2024
 Requires PHP: > 7.4
 */
 /*!
@@ -2802,7 +2802,7 @@ h6, .h6 {
   height: 4.375rem;
 }
 .sidebar-boxes-item.computer a::before {
-  background: #fff url("./images/icons/ent.png") center center no-repeat;
+  background: #fff url("./images/icons/ent.png?t=04072024") center center no-repeat;
   background-size: 2.8125rem auto;
   content: "";
   display: inline-block;
@@ -2811,7 +2811,7 @@ h6, .h6 {
   height: 4.375rem;
 }
 .sidebar-boxes-item.pronote a::before {
-  background: #fff url("./images/icons/pronote.png") center center no-repeat;
+  background: #fff url("./images/icons/pronote.png?t=04072024") center center no-repeat;
   background-size: 3.125rem auto;
   content: "";
   display: inline-block;
@@ -2820,7 +2820,7 @@ h6, .h6 {
   height: 4.375rem;
 }
 .sidebar-boxes-item.hhrr a::before {
-  background: #fff url("./images/icons/hhrr.png") center center no-repeat;
+  background: #fff url("./images/icons/hhrr-05072024.png") center center no-repeat;
   background-size: 2.8125rem auto;
   content: "";
   display: inline-block;
@@ -2829,7 +2829,7 @@ h6, .h6 {
   height: 4.375rem;
 }
 .sidebar-boxes-item.cdi a::before {
-  background: #fff url("./images/icons/cdi.png") center center no-repeat;
+  background: #fff url("./images/icons/cdi-05072024.png") center center no-repeat;
   background-size: 2.8125rem auto;
   content: "";
   display: inline-block;

@@ -3154,7 +3154,24 @@ h6, .h6 {
 .values-section {
   padding: 30px 0;
 }
+.values-section-col {
+  margin-bottom: 0.625rem;
+}
+@media screen and (min-width: 768px) {
+  .values-section-col {
+    margin-bottom: 0;
+  }
+}
 .values-section-item {
-  margin-bottom: 1.25rem;
   display: block;
+}
+.values-section-image {
+  display: inline-block;
+  max-width: 5rem;
+  margin-right: 0.3125rem;
+}
+@media screen and (min-width: 768px) {
+  .values-section-image {
+    max-width: 7.5rem;
+  }
 }

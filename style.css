@@ -5,7 +5,7 @@ Author: suwebmaster.net | @bamacaerick
 Author URI: https://suwebmaster.net
 Description: A fully responsive website with custom design provided by the Design Team, SEO-friendly, Schema-ready, Accessibility-ready, based on Bootstrap 5.1 Grid and utilities.
 Tags: accessibility-ready, one-column, two-columns, right-sidebar, custom-logo, custom-menu, featured-images, translation-ready, blog.
-Version: 1.0.0-16.4.2024
+Version: 2.0.0-04.07.2024
 Requires PHP: > 7.4
 */
 /*!
@@ -2812,7 +2812,7 @@ h6, .h6 {
 }
 .sidebar-boxes-item.pronote a::before {
   background: #fff url("./images/icons/pronote.png") center center no-repeat;
-  background-size: 2.8125rem auto;
+  background-size: 3.125rem auto;
   content: "";
   display: inline-block;
   border-radius: 50px;
@@ -2830,7 +2830,7 @@ h6, .h6 {
 }
 .sidebar-boxes-item.cdi a::before {
   background: #fff url("./images/icons/cdi.png") center center no-repeat;
-  background-size: 2.1875rem auto;
+  background-size: 2.8125rem auto;
   content: "";
   display: inline-block;
   border-radius: 50px;

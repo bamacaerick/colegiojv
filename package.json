@@ -15,5 +15,7 @@
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.66.1"
-  }
+  }, 
+  "engines": {
+    "node": "20.13.1"}
 }

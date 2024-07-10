@@ -3165,6 +3165,9 @@ h6, .h6 {
 .values-section-item {
   display: block;
 }
+.values-section-item:hover {
+  color: #ffffff;
+}
 .values-section-image {
   display: inline-block;
   max-width: 5rem;

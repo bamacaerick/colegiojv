@@ -12,6 +12,9 @@
 
         &-item {
             display: block;
+            &:hover {
+                color: $white;
+            }
         }
 
         &-image {

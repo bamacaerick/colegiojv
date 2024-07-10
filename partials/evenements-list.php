@@ -8,7 +8,9 @@
         <?php endif; ?>
     </div>
     <div class="article-evenements-content">
-        <span class="d-block article-evenements-content-date"><?php echo get_the_date(); ?></span>
+        <?php if(!is_front_page()): ?>)
+            <span class="d-block article-evenements-content-date"><?php echo get_the_date(); ?></span>
+        <?php endif; ?>
         <h3 class="article-evenements-content-heading text-uppercase">
             <a href="<?php the_permalink(); ?>" class="text-blue-dark"> 
                 <?php the_title(); ?>

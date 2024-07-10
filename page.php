@@ -19,7 +19,7 @@
             <?php endwhile; endif; ?>
         </div>
         <div class="col-12 col-lg-4">
-            <?php get_sidebar('special'); ?>
+            <?php// get_sidebar('special'); ?>
             <?php get_sidebar('boxes'); ?>
             <?php if (is_active_sidebar('primary-widget-area')) : ?>
                 <div id="primary" class="widget-area">
